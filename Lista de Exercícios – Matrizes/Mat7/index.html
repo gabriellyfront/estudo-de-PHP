@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+</head>
+
+<body>
+
+    <script>
+
+        var maior = 0
+        var m = []
+        var par = 0
+        var impar = 0
+
+        for (var i = 0; i < 3; i++) {
+            m[i] = []
+
+            for (var j = 0; j < 3; j++) {
+                m[i][j] = parseInt(prompt("Digite um valor:"))
+
+                if (m[i][j] % 2 == 0) {
+                    par++
+                   
+                }
+                else{
+                    impar++
+                }
+
+            }
+        }
+
+        document.write("existem: " + par + " numeros pares, e " + impar + " numeros impares")
+
+
+
+    </script>
+
+</body>
+
+</html>

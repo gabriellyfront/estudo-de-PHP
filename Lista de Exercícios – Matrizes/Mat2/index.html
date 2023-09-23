@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+</head>
+
+<body>
+
+    <script>
+        var d = 0;
+        var soma = 0
+        var somad = 0
+        var m = []
+        var diagonal = 0
+
+        for (var i = 0; i < 4; i++) {
+            m[i] = []
+
+            for (var j = 0; j < 4; j++) {
+                m[i][j] = parseInt(prompt("Digite um valor:"))
+
+                soma = soma + m[i][j];
+            }
+        }
+
+        for (var j = 0; j < 4; j++) {
+            somad = somad + m[d][d]
+            d++
+        }
+
+
+        document.write("Os números digitados na Matriz foram: " + m)
+        document.write("<br> A somatoria do ARRAY é: " + soma);
+        document.write("<br> A soma da diagonal da ARRAY é: " + somad);
+
+    </script>
+
+</body>
+
+</html>
